@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "473169d6-9b5c-4c9f-98d2-87ef02e6c671",
+		"name": "test api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7433613"
+	},
+	"item": [
+		{
+			"name": "Add Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first\": \"Love\",\n    \"last\": \"Jos2\",\n    \"email\": \"mail0000001@mail.com\",\n    \"phone\": \"\",\n    \"middle\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/add"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/customers"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"middleName\": \"Jane\",\n    \"email\": \"john@doe.com\",\n    \"phoneNumber\": \"911\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/customer/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/customer/10"
+			},
+			"response": []
+		}
+	]
+}
